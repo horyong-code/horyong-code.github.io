@@ -104,6 +104,13 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -10899,9 +10906,10 @@ p.lead {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    max-width: 15rem;
+    max-height: 15rem;
+    border: 0.2rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
   }
   #sideNav .navbar-collapse {
     display: flex;
