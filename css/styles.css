@@ -141,6 +141,13 @@ body {
   color: #258ddb;
 }
 
+.ac1:hover #linkaddr1 {
+  text-decoration: underline;
+}
+
+.ac2:hover #linkaddr2 {
+  text-decoration: underline;
+}
 
 .ac1 {
   margin-right: 50px;
