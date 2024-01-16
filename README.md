@@ -4,7 +4,7 @@
 <h4>포트폴리오를 좀 더 효과적으로 보여주기 위한 웹 페이지 개발🌱<br>
 부트스트랩 템플릿을 이용하여 구현⚡</h4>
 
-**주소** : <a href="https://horyong-code.github.io">horyong-code.github.io</a><br>
+**주소** : <a href="https://horyong-code.github.io" target="_blank">horyong-code.github.io</a><br>
 **개발 기간** : 24.01.15 - 24.01.16
 
 <!--
