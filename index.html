@@ -7,6 +7,8 @@
         <meta name="author" content="" />
         <title>KHR's Portfolio</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- jQuery -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -30,8 +32,9 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#archive">Archive</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education & Certifications</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education & Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#self">Self-Introduction</a></li>
                 </ul>
             </div>
@@ -44,17 +47,17 @@
                     <h1 class="mb-0">
                         <span class="text-secondary">KANG HORYONG</span>
                     </h1>
-                    <div class="subheading mb-5">
+                    <!-- <div class="subheading mb-5">
                         010-8568-0577 ·
                         <a href="mailto:iwork0426@gmail.com">iwork0426@gmail.com</a>
-                    </div>
+                    </div> -->
                     <p class="lead mb-5">안녕하세요. 새로운 도전, 개발자를 꿈꿉니다.</p>
 
                     <h2>About Me</h2>
                     <i class="fa-solid fa-person"></i> <b>이름</b> : 강호룡<br>
                     <i class="fa-regular fa-calendar"></i> <b>생년월일</b> : 91.04.26<br>
                     <i class="fa-solid fa-phone"></i> <b>전화번호</b> : 010-8568-0577<br>
-                    <i class="fa-regular fa-envelope"></i> <b>이메일</b> : iwork0426@gmail.com<br>
+                    <i class="fa-regular fa-envelope"></i> <b>이메일</b> : <a href="mailto:iwork0426@gmail.com">iwork0426@gmail.com</a><br>
                     <br>
                     <div class="social-icons">
                         <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
@@ -66,26 +69,80 @@
             <section class="resume-section" id="archive">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Archive</h2>
-                    <h3 style="text-transform: capitalize;">Github</h3>
+                    <div class="container_wrapper">
+                    <div class="archive_container ac1" style="background-color: #E2F0CB; width: 400px; padding: 20px 0 0 20px; border-radius: 30px;">
+                    <a class="link" href="https://github.com/horyong-code" target="_blank">
+                    <h3 style="text-transform: capitalize;"><i class="fa-brands fa-github"></i> Github</h3>
                     <div style="margin-bottom: 10px;">
-                    <a href="https://github.com/horyong-code" target="_blank">https://github.com/horyong-code</a>
+                    <span class="linkaddr">github.com/horyong-code</span>
                     </div>
                     <div style="margin-bottom: 10px;">
                     <b>다양한 소스코드</b>를 기록한 깃허브 저장소입니다.
                     </div>
                     • 수업 필기 소스코드<br>
                     • 프로젝트 소스코드<br>
-                    • 현재 페이지 생성 소스코드<br><br>
-
-                    <h3 style="text-transform: capitalize;">Notion</h3>
+                    • 현재 페이지 생성 소스코드<br><br></a>
+                    </div>
+                    <br><br>
+                    <div class="archive_container ac2" style="background-color: #E8DFF5; width: 400px; padding: 20px 0 0 20px; border-radius: 30px;">
+                    <a class="link" href="https://horyongcode.notion.site/Contents-e72fb7c75584426bbd072b07020a0889?pvs=4" target="_blank">
+                    <h3 style="text-transform: capitalize;"><img src="assets/img/notionicon.png"> Notion</h3>
                     <div style="margin-bottom: 10px;">
-                    <a href="https://horyongcode.notion.site/Contents-e72fb7c75584426bbd072b07020a0889?pvs=4" target="_blank">https://horyongcode.notion.site/Contents-e72fb7c75584426bbd072b07020a0889?pvs=4</a>
+                    <span class="linkaddr">horyongcode.notion.site/</span>
                     </div>
                     <div style="margin-bottom: 10px;">
-                    매일매일의 <b>수업 내용을</b>를 기록한 노션입니다.
+                    매일매일의 <b>수업 내용</b>을 기록한 노션입니다.
                     </div>
                     • 수업 필기 내용<br>
-                    • 다양한 연습 문제 풀이<br><br>
+                    • 다양한 연습 문제 풀이<br><br></a>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills -->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <img src="assets/img/skills.png" id="skills">
+                    <!-- <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fa-brands fa-js"></i></li>
+                        <li class="list-inline-item"><i class="fa-brands fa-java"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                    </ul><br>
+                    <div class="subheading mb-3">Tools</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fa-brands fa-github"></i></li>
+                        <li class="list-inline-item"><i class="fa-brands fa-sourcetree"></i></li>
+                    </ul><br> -->
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education & Certifications</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">아이티윌 부산교육센터</h3>
+                            <div class="subheading mb-3">클라우드 융합 자바 스프링 백엔드 개발자 과정</div>
+                            <div>수료</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2023.07 - 2024.01</span></div>
+                    </div>
+                    <div class="subheading mb-3">Certifications</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            SQL 개발자 (2023.12)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            워드프로세서 (2016.01)
+                        </li>
+                    </ul>
                 </div>
             </section>
             <hr class="m-0" />
@@ -98,6 +155,8 @@
                             <h3 class="mb-0">Cafein - MES? 원두를 가공, 포장하여 판매하는 회사의 생산 관리!</h3>
                             <div class="subheading mb-3">2차 프로젝트</div>
                             <p>낯선 MES, 주위에서 흔하게 접할 수 있는 커피! 그 커피의 핵심 원두를 가공, 포장하여 판매하는 회사의 생산 관리 시스템을 만들어 MES를 이해해보았습니다.</p>
+                            <p>✔ <b>Github</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/horyong-code/CafeIn" target="_blank">https://github.com/horyong-code/CafeIn</a><br>
+                            ✔ <b>URL</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://class7-team4.itwillbs.com:8080" target="_blank">http://class7-team4.itwillbs.com:8080</a> (아이디 : 1000 / 비밀번호 : 100000)</p>
                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#SecondProject">
                                 자세히 보기
                             </button>
@@ -110,48 +169,14 @@
                             <h3 class="mb-0">Fooding - 움직이는 푸드트럭! 미리 미리 예약해보자!</h3>
                             <div class="subheading mb-3">1차 프로젝트</div>
                             <p>이동하는 푸드트럭은 언제 어디에서 운영하는지 몰라서 그로 발생하는 불편함을 해결해보고자 푸드트럭 음식 주문 예약 서비스 Fooding을 만들어보았습니다.</p>
+                            <p>✔ <b>Github</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/horyong-code/Fooding" target="_blank">https://github.com/horyong-code/Fooding</a><br>
+                            ✔ <b>URL</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://c7d2307t2.itwillbs.com/Project_Foodtruck/FtMainAction.man" target="_blank">http://c7d2307t2.itwillbs.com/Project_Foodtruck/FtMainAction.man</a> (아이디 : admin / 비밀번호 : fooding1234)</p>
                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#FirstProject">
                                 자세히 보기
                             </button>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">2023.10 - 2023.11</span></div>
                     </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education, Skills & Certifications</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">아이티윌 부산교육센터</h3>
-                            <div class="subheading mb-3">클라우드 융합 자바 스프링 백엔드 개발자 과정</div>
-                            <div>수료</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2023.07 - 2024.01</span></div>
-                    </div>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-js"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-java"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-sourcetree"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-github"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-google-drive"></i></li>
-                    </ul><br>
-                    <div class="subheading mb-3">Certifications</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            SQL 개발자 (2023.12)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            워드프로세서 (2016.01)
-                        </li>
-                    </ul>
                 </div>
             </section>
             <hr class="m-0" />
@@ -192,7 +217,7 @@
                     <div class="modal-body" style="padding-left: 100px; padding-right: 100px;">
                     <h2>Cafein</h2>
                     <hr>
-                    <h4>🔗 Service URL</h4>
+                    <h4>🔗 Deployment URL</h4>
                     <a href="http://class7-team4.itwillbs.com:8080" target="_blank">http://class7-team4.itwillbs.com:8080</a> (프로젝트 시연 시 아이디 : 1000 / 비밀번호 : 100000)
                     <br>
                     <br>
@@ -212,8 +237,10 @@
                         자재와 생산의 재고 목록을 출력하는 페이지를 구현하였습니다.
                         재고량 변경과 창고 이동 로직을 구현하였습니다.
                     </ul>
-                    <h4>🔍 Detail Portfolio</h4>
+                    <h4>🔍 Personal Detail Portfolio</h4>
                     <a href="https://www.miricanvas.com/v/12ss08c" target="_blank">https://www.miricanvas.com/v/12ss08c</a><br><br>
+                    <h4>🖥️ Project Github</h4>
+                    <a href="https://github.com/horyong-code/CafeIn" target="_blank">https://github.com/horyong-code/CafeIn</a><br><br>
                     <h4>🔨 Technology Stack(s)</h4>
                     Frontend : HTML, CSS, Bootstrap<br>
                     Backend : Java, JavaScript (jQuery, Ajax), Spring (MVC, MyBatis)<br>
@@ -237,7 +264,7 @@
                     <div class="modal-body" style="padding-left: 100px; padding-right: 100px;">
                     <h2>Fooding</h2>
                     <hr>
-                    <h4>🔗 Service URL</h4>
+                    <h4>🔗 Deployment URL</h4>
                     <a href="http://c7d2307t2.itwillbs.com/Project_Foodtruck/FtMainAction.man" target="_blank">http://c7d2307t2.itwillbs.com/Project_Foodtruck/FtMainAction.man</a> (프로젝트 시연 시 아이디 : admin / 비밀번호 : fooding1234)
                     <br>
                     <br>
@@ -260,8 +287,10 @@
                         푸드트럭 등록과 그 푸드트럭에 따른 상품을 등록할 수 있는 페이지를 구현하였습니다.<br>
                         회원을 강제로 삭제할 수 있으며 활성화 컬럼을 등록하여 DB에서는 일정 기간동안 보유하고 있도록 하였습니다.<br>
                     </ul>
-                    <h4>🔍 Detail Portfolio</h4>
+                    <h4>🔍 Personal Detail Portfolio</h4>
                     <a href="https://www.miricanvas.com/v/12st8ee" target="_blank">https://www.miricanvas.com/v/12st8ee</a><br><br>
+                    <h4>🖥️ Project Github</h4>
+                    <a href="https://github.com/horyong-code/Fooding" target="_blank">https://github.com/horyong-code/Fooding</a><br><br>
                     <h4>🔨 Technology Stack(s)</h4>
                     Frontend : HTML, CSS, Bootstrap<br>
                     Backend : Java, JavaScript (jQuery, Ajax)<br>
@@ -273,6 +302,19 @@
                 </div>
             </div>
         </div>
+        <!-- 페이지 이동 JavaScript -->
+        <script>
+            $(document).ready(function(){
+                $('.ac1').click(function(){
+                    location.href="https://github.com/horyong-code/";
+                });
+
+                $('.ac2').click(function(){
+                    location.href="https://horyongcode.notion.site/Contents-e72fb7c75584426bbd072b07020a0889?pvs=4";
+                });
+            });
+        </script>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

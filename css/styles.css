@@ -111,6 +111,41 @@ body {
   font-style: normal;
 }
 
+::selection {
+  background-color: #F8E0E0;
+  color: black;
+}
+
+.link {
+  text-decoration: none;
+  color: #6c757d;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: #6c757d;
+}
+
+.archive_container:hover {
+  cursor: pointer;
+  transition: 0.2s;
+  transform: scale(1.1) translate(32px, 10px);
+  margin-right: 110px;
+}
+
+.container_wrapper {
+  display: flex;
+}
+
+.linkaddr {
+  color: #258ddb;
+}
+
+
+.ac1 {
+  margin-right: 50px;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -650,15 +685,27 @@ progress {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
   }
+
+  #skills {
+    width: 400px;
+  }
+
+  .container_wrapper {
+    display: block;
+  }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
+  }
+
+  .container_wrapper {
+    display: block;
   }
 }
 
