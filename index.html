@@ -19,6 +19,39 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+        <!-- Splide -->
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+        
+        <script>
+            document.addEventListener( 'DOMContentLoaded', function () {
+                new Splide( '#image-carousel' ).mount();
+            } );
+        </script>
+
+        <script>
+            document.addEventListener( 'DOMContentLoaded', function () {
+                new Splide( '#image-carousel2' ).mount();
+            } );
+        </script>
+
+        <style type="text/css">
+            .splide__slide img {
+                width: 900px;
+                height: 430px;
+            }
+
+            #image-carousel {
+                width: 900px; /* 원하는 너비로 조절 */
+                margin: 0 auto;
+            }
+
+            #image-carousel2 {
+                width: 900px; /* 원하는 너비로 조절 */
+                margin: 0 auto;
+            }
+        </style>
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -134,8 +167,7 @@
                             <h3 class="mb-0"><span class="edu">아이티윌 부산교육센터</span></h3>
                             <div class="subheading mb-3"><span>클라우드 융합 자바 스프링 백엔드 개발자 과정</span>
                             </div>
-                            <div>수료<br>
-                            프로젝트 경진대회 최우수상 수상</div>
+                            <div>수료 (프로젝트 경진대회 최우수상 수상 - 2차 프로젝트 CafeIn)</div>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">2023.07 - 2024.01</span></div>
                     </div>
@@ -225,6 +257,34 @@
                     <div class="modal-body" style="padding-left: 100px; padding-right: 100px;">
                     <h2>Cafein</h2>
                     <hr>
+                    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+                        <div class="splide__track">
+                              <ul class="splide__list">
+                                  <li class="splide__slide">
+                                      <img src="assets/img/qualitylist.JPG" alt="">
+                                  </li>
+                                  <li class="splide__slide">
+                                      <img src="assets/img/qualityaudit.png" alt="">
+                                  </li>
+                                  <li class="splide__slide">
+                                      <img src="assets/img/defectwrite.png" alt="">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="assets/img/defectlist.JPG" alt="">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="assets/img/stocklist.png" alt="">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="assets/img/stockquantity.png" alt="">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="assets/img/stockstorage.png" alt="">
+                                  </li>
+                              </ul>
+                        </div>
+                    </section>
+                    <br>
                     <h4>🔗 Deployment URL</h4>
                     <a href="http://c7d2307t4.itwillbs.com/" target="_blank">http://c7d2307t4.itwillbs.com/</a> (프로젝트 시연 시 아이디 : 1000 / 비밀번호 : 100000)
                     <br>
@@ -245,6 +305,18 @@
                         자재와 생산의 재고 목록을 출력하는 페이지를 구현하였습니다.
                         재고량 변경과 창고 이동 로직을 구현하였습니다.
                     </ul>
+                    <h4>💡 Meaning</h4>
+                    이번 프로젝트의 핵심은 Spring의 활용에 있었습니다. Spring을 배워 적용하는 첫 프로젝트였기때문에, Spring의 이해를 높임에 있어 큰 도움이 되었습니다.<br>
+                    Spring을 사용하면서 기존의 구현 방식과 많이 달라져서 복잡함과 어려움을 크게 느끼고 있었는데 프로젝트를 하면서 처음에 익숙해지는 게 어렵고 익숙해지기만 하면<br>
+                    기존의 구현 방식보다는 쉽다는 걸 알게 되었습니다.<br><br>
+
+                    또한 1차 프로젝트에서는 제대로 활용해보지 못한 AJAX (비동기 방식)를 사용해보면서 한 페이지에 최신 목록만 출력하던 단순하게만 표현했던 페이지 구성을<br>
+                    각각 처리해볼 수 있는 능력을 키울 수 있는 좋은 경험이었다고 생각합니다.<br><br>
+
+                    하지만 Security는 프로젝트 막바지에 배워서 제대로 적용을 할 수 없었다는 점이 아쉽고 아직 Spring에 대해 반복적으로 숙달하는 학습이 필요하다고 생각합니다.<br>
+                    개인적인 프로젝트를 진행해보며 Security 적용과 Spring 반복 학습을 통해 익숙함을 키워 앞으로의 개발자에 적극적으로 활용을 해보고 싶습니다.
+                    
+                    <br><br>
                     <h4>🔍 Personal Detail Portfolio</h4>
                     <a href="https://www.miricanvas.com/v/12ss08c" target="_blank">https://www.miricanvas.com/v/12ss08c</a><br><br>
                     <h4>🖥️ Project Github</h4>
@@ -273,13 +345,38 @@
                     <div class="modal-body" style="padding-left: 100px; padding-right: 100px;">
                     <h2>Fooding</h2>
                     <hr>
+                    <section id="image-carousel2" class="splide" aria-label="Beautiful Images">
+                        <div class="splide__track">
+                              <ul class="splide__list">
+                                  <li class="splide__slide">
+                                      <img src="assets/img/fooding_1.png" alt="">
+                                  </li>
+                                  <li class="splide__slide">
+                                      <img src="assets/img/fooding_2.png" alt="">
+                                  </li>
+                                  <li class="splide__slide">
+                                      <img src="assets/img/fooding_3.png" alt="">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="assets/img/fooding_4.png" alt="">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="assets/img/fooding_5.png" alt="">
+                                  </li>
+                                  <li class="splide__slide">
+                                    <img src="assets/img/fooding_6.png" alt="">
+                                  </li>
+                              </ul>
+                        </div>
+                    </section>
+                    <br>
                     <h4>🔗 Deployment URL</h4>
                     <a href="http://c7d2307t2.itwillbs.com/Project_Foodtruck/FtMainAction.man" target="_blank">http://c7d2307t2.itwillbs.com/Project_Foodtruck/FtMainAction.man</a> (프로젝트 시연 시 아이디 : admin / 비밀번호 : fooding1234)
                     <br>
                     <br>
                     <h4>📌 Summary</h4>
-                    2차 프로젝트 주제인 MES에 맞춰서 원두를 가공, 포장하여 판매하는 MES를 구축해보았습니다.<br>
-                    1차 프로젝트와는 다르게 SPRING을 메인으로 사용하여 진행했으며 기본 기능에 충실하여 구현 완료 후 다양한 부가 기능을 구현해보려고 노력해보았습니다.<br>
+                    1차 프로젝트 주제인 주문 예약 플랫폼 구축에 맞게 푸드트럭을 예약 주문을 할 수 있는 사이트를 만들어 보았습니다.<br>
+                    처음으로 프로젝트를 해보기 때문에 기본 기능 구현 위주로 프로젝트를 진행해 보았습니다.<br>
                     <br>
                     <h6>* 맡은 파트</h6>
                     <ul>
@@ -296,6 +393,14 @@
                         푸드트럭 등록과 그 푸드트럭에 따른 상품을 등록할 수 있는 페이지를 구현하였습니다.<br>
                         회원을 강제로 삭제할 수 있으며 활성화 컬럼을 등록하여 DB에서는 일정 기간동안 보유하고 있도록 하였습니다.<br>
                     </ul>
+                    <h4>💡 Meaning</h4>
+                    새로운 경험이었고 그로 인해 많은 점을 느끼게 됨으로써, 저에게 있어 가장 도움이 되었던 프로젝트였다고 생각합니다.<br>
+                    처음 해보는 프로젝트였기에 시작할 때는 계획을 세우는 데 어려움을 겪었고, 개념 이해 부족으로 헤매는 시간이 많았습니다.<br> 
+                    그렇기에 기본에 충실하게 맡은 파트 완성만 해보자는 마음으로 진행했고, 이로 인해 필수적인 기능은 구현했지만 전반적으로 단조로워진 결과물이 나왔습니다.<br><br>
+                    이번 프로젝트를 통해 느꼈던 점은 프로젝트를 효과적으로 계획하고 진행하는 방법을 배우고, 개념 이해에 대한 중요성을 깨닫게 되었습니다.<br>
+                    프로젝트 초기에는 목표와 요구사항을 명확히 정의하고, 프로젝트의 흐름 또한 명확하게 이해해야 페이지 간의 기능 구성을 쉽게 할 수 있고,<br>
+                    충분한 개념 이해가 설계된 기능을 실제로 구현할 때의 시간과 오류를 줄일 수 있고 보다 완성도 높은 결과물을 만들어 낼 수 있기 때문입니다.
+                    <br><br>
                     <h4>🔍 Personal Detail Portfolio</h4>
                     <a href="https://www.miricanvas.com/v/12st8ee" target="_blank">https://www.miricanvas.com/v/12st8ee</a><br><br>
                     <h4>🖥️ Project Github</h4>
